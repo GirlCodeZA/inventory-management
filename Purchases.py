@@ -14,7 +14,7 @@ def clrscreen():
 
 def insertData():
     try:
-        cnx = mysql.connector.connect(user='root', password='123', host='localhost', database='Inventory')
+        cnx = mysql.connector.connect(user='root', password='girlcode123', host='localhost', database='Inventory')
         Cursor = cnx.cursor()
         ProductCode = input("Enter Product Code : ")
         ProductName = input("Enter Product Name : ")
@@ -47,7 +47,7 @@ def insertData():
 
 def deleteData():
     try:
-        cnx = mysql.connector.connect(user='root', password='123', host='localhost', database='Inventory')
+        cnx = mysql.connector.connect(user='root', password='girlcode123', host='localhost', database='Inventory')
         Cursor = cnx.cursor()
         ProductCode = input("Enter Product Code to be deleted from the Purchases : ")
         Qry = ("""DELETE FROM Purchases WHERE ProductCode = %s""")
@@ -69,7 +69,7 @@ def deleteData():
 
 def searchData():
     try:
-        cnx = mysql.connector.connect(user='root', password='123', host='localhost', database='Inventory')
+        cnx = mysql.connector.connect(user='root', password='girlcode123', host='localhost', database='Inventory')
         Cursor = cnx.cursor()
         ProductCode = input("Enter Product Code to be searched from the Purchases : ")
         query = ("SELECT * FROM Purchases WHERE ProductCode = %s ")
@@ -104,7 +104,7 @@ def searchData():
 
 def updateData():
     try:
-        cnx = mysql.connector.connect(user='root', password='123', host='localhost', database='Inventory')
+        cnx = mysql.connector.connect(user='root', password='girlcode123', host='localhost', database='Inventory')
         Cursor = cnx.cursor()
         ProductCode = input("Enter Product Code to be updated from the Purchases : ")
         query = ("SELECT * FROM Purchases WHERE ProductCode = %s ")

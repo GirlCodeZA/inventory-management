@@ -12,7 +12,7 @@ Database.TablesCreate()
 
 while True:
     Purchases.clrscreen()
-    print("\t\t\t Inventory Management\n")
+    print("\t\t\t Murendeni Inventory Management\n")
     print("=====================================================================")
     print("1. Purchase Management")
     print("2. Sales Management")

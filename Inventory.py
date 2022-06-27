@@ -13,7 +13,7 @@ def clrscreen():
 def searchData():
     try:
         os.system('cls')
-        cnx = mysql.connector.connect(user='root', password='123', host='localhost', database='Inventory')
+        cnx = mysql.connector.connect(user='root', password='girlcode123', host='localhost', database='Inventory')
         Cursor = cnx.cursor()
         ProductCode = input("Enter Product Code to be searched from the Inventory : ")
         query = ("SELECT * FROM Inventory where ProductCode = %s")

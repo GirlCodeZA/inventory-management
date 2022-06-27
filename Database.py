@@ -5,7 +5,7 @@ TABLES: Purchases, Sales, and Inventory"""
 import mysql.connector
 
 def DatabaseCreate():
-    cnx = mysql.connector.connect(user='root', password='123', host='localhost')
+    cnx = mysql.connector.connect(user='root', password='girlcode123', host='localhost')
     Cursor = cnx.cursor()
     Cursor.execute("CREATE DATABASE IF NOT EXISTS Inventory")
     Cursor.execute("")
@@ -14,7 +14,7 @@ def DatabaseCreate():
 
 
 def TablesCreate():
-    cnx = mysql.connector.connect(user='root', password='123', host='localhost', database='Inventory')
+    cnx = mysql.connector.connect(user='root', password='girlcode123', host='localhost', database='Inventory')
     Cursor = cnx.cursor()
     Cursor.execute("CREATE TABLE IF NOT EXISTS Purchases(ProductCode int(2) Primary Key, ProductName varchar(20), PurchaseDate Date, PurchasePrice int(3), ProductStock int(2))")
     Cursor.execute("CREATE TABLE IF NOT EXISTS Sales(ProductCode int(2) Primary Key, ProductName varchar(20), SalesDate Date, SalesPrice int(3))")
